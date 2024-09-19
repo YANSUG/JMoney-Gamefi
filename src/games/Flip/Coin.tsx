@@ -17,12 +17,12 @@ function CoinModel() {
       <primitive object={model.nodes.Coin}>
       </primitive>
       <mesh position-z={.3}>
-        <planeGeometry args={[1.3, 1.3, 1.3]} />
+        <planeGeometry args={[2, 2, 2]} />
         <meshStandardMaterial transparent map={heads} />
       </mesh>
       <group rotation-y={Math.PI}>
         <mesh position-z={.3}>
-          <planeGeometry args={[1.3, 1.3, 1.3]} />
+          <planeGeometry args={[2, 2, 2]} />
           <meshStandardMaterial transparent map={tails} />
         </mesh>
       </group>
@@ -52,7 +52,7 @@ export function Coin({ flipping, result }: CoinFlipProps) {
     } else {
       group.current.rotation.y += clamp((target.current - group.current.rotation.y) * 10 * dt, 0, 1)
     }
-    const scale = flipping ? 1.25 : 1
+    const scale = flipping ? 1.5 : 1
     group.current.scale.y += (scale - group.current.scale.y) * .1
     group.current.scale.setScalar(group.current.scale.y)
   })
