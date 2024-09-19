@@ -19,7 +19,7 @@ export const GAMES: GameBundle[] = [
       name: 'Dice',
       image: '/games/dice.png',
       description: `
-        Dice challenges players to predict the outcome of a roll with a unique twist. Select a number and aim to roll below it to win. Adjusting your choice affects potential payouts, balancing risk and reward for an engaging experience.
+       擲筊是一種簡單卻刺激的賭注遊戲：選擇聖筊或陰筊，賭注翻倍或全數輸光。這款簡單且高風險的遊戲，每次擲筊都在考驗你的運氣、決策力，甚至是你的信仰力。
       `,
     },
     app: React.lazy(() => import('./Dice')),
