@@ -109,7 +109,7 @@ function Flip() {
         <GambaUi.Button disabled={gamba.isPlaying} onClick={() => setSide(side === 'heads' ? 'tails' : 'heads')}>
           <div style={{ display: 'flex' }}>
             <img height="20px" src={side === 'heads' ? TEXTURE_HEADS : TEXTURE_TAILS} />
-            {side === 'heads' ? 'Heads' : 'Tails' }
+            {side === 'heads' ? '聖筊' : '陰筊' }
           </div>
         </GambaUi.Button>
         <GambaUi.PlayButton onClick={play}>
