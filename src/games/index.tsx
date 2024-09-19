@@ -41,7 +41,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       name: 'Flip',
       description: `
-        Flip offers a straightforward yet thrilling gamble: choose Heads or Tails and double your money or lose it all. This simple, high-stakes game tests your luck and decision-making with every flip of the coin.
+        擲筊是一種簡單卻刺激的賭注遊戲：選擇聖筊或陰筊，賭注翻倍或全數輸光。這款簡單且高風險的遊戲，每次擲筊都在考驗你的運氣、決策力，甚至是你的信仰力。
       `,
       image: '/games/flip.png',
       background: '#ffe694',
