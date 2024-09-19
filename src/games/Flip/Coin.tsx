@@ -1,21 +1,17 @@
-import { useGLTF, useTexture } from '@react-three/drei'
+import { useTexture } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import React from 'react'
 import { Group } from 'three'
 import { clamp } from 'three/src/math/MathUtils'
-import MODEL_COIN from './Coin.glb'
 import TEXTURE_HEADS from './heads.png'
 import TEXTURE_TAILS from './tails.png'
 
 export { TEXTURE_HEADS, TEXTURE_TAILS }
 
 function CoinModel() {
-  const model = useGLTF(MODEL_COIN)
   const [heads, tails] = useTexture([TEXTURE_HEADS, TEXTURE_TAILS])
   return (
     <>
-      <primitive object={model.nodes.Coin}>
-      </primitive>
       <mesh position-z={.3}>
         <planeGeometry args={[2, 2, 2]} />
         <meshStandardMaterial transparent map={heads} />
