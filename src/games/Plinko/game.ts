@@ -4,10 +4,10 @@ const WIDTH = 700
 const HEIGHT = 700
 
 // How many plinkos to simulate to find desired result. More is slower but more likely to yield desired result
-const SIMULATIONS = 100
+const SIMULATIONS = 150
 // Size of the plinko
-export const PLINKO_RAIUS = 9
-export const PEG_RADIUS = 11
+export const PLINKO_RAIUS = 10
+export const PEG_RADIUS = 12
 const RESTISTUTION = .4
 const GRAVITY = 1
 // How far from the center plinkos can spawn
