@@ -13,12 +13,12 @@ function CoinModel() {
   return (
     <>
       <mesh position-z={.3}>
-        <planeGeometry args={[2, 2, 2]} />
+        <planeGeometry args={[3, 3, 3]} />
         <meshStandardMaterial transparent map={heads} />
       </mesh>
       <group rotation-y={Math.PI}>
         <mesh position-z={.3}>
-          <planeGeometry args={[2, 2, 2]} />
+          <planeGeometry args={[3, 3, 3]} />
           <meshStandardMaterial transparent map={tails} />
         </mesh>
       </group>
