@@ -174,8 +174,8 @@ export default function Slots() {
                 {spinning ? (
                   <Messages
                     messages={[
-                      'Spinning!',
-                      'Good luck',
+                      '好運轉起來!',
+                      '轉吧，七彩霓虹燈',
                     ]}
                   />
                 ) : result ? (
@@ -185,8 +185,8 @@ export default function Slots() {
                 ) : isValid ? (
                   <Messages
                     messages={[
-                      'SPIN ME!',
-                      'FEELING LUCKY?',
+                      '選擇下注、按下旋轉!',
+                      '今天的你很幸運',
                     ]}
                   />
                 ) : (
