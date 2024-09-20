@@ -180,7 +180,7 @@ export default function Slots() {
                   />
                 ) : result ? (
                   <>
-                    Payout: <TokenValue mint={result.token} amount={result.payout} />
+                    獎勵: <TokenValue mint={result.token} amount={result.payout} />
                   </>
                 ) : isValid ? (
                   <Messages
