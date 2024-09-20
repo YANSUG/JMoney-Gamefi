@@ -41,8 +41,8 @@ export const Fireworks = () => {
 
   return (
     <points ref={particles}>
-      <bufferGeometry />
-      <pointsMaterial size={0.05} color={'#ffcc00'} />
+      <bufferGeometry attach="geometry" />
+      <pointsMaterial attach="material" size={0.05} color={'#ffcc00'} />
     </points>
   )
 }
