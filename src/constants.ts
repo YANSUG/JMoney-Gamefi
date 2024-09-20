@@ -71,7 +71,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     image: 'https://i.ibb.co/vQN8D0w/icon-512.png',
     baseWager: 1e6,
     decimals: 6,
-    usdPrice: 0,
+    usdPrice: 0.0025,
   },
 ]
 
