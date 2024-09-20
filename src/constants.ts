@@ -69,9 +69,9 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     name: 'Joss Money',
     symbol: 'JMoney',
     image: 'https://i.ibb.co/vQN8D0w/icon-512.png',
-    baseWager: 1e6,
+    baseWager: 1e8,
     decimals: 6,
-    usdPrice: 0.0025,
+    usdPrice: 0,
   },
 ]
 
