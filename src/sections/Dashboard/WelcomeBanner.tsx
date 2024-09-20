@@ -115,7 +115,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>歡迎來到 金紙JMoney湯姆熊遊樂中心 </h1>
+        <h1>歡迎來到 金紙JMoney 廟口夜市遊戲區 </h1>
         <p>
           一個挑戰信仰與自己財庫的遊樂園
         </p>
