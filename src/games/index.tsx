@@ -31,7 +31,7 @@ export const GAMES: GameBundle[] = [
       name: 'Slots',
       image: '/games/slots.png',
       description: `
-        Slots is the quintessential game of luck and anticipation. Spin the reels and match symbols to win, with potential rewards displayed upfront. A fair and exciting game, Slots offers a classic casino experience tailored for digital enjoyment.
+       老虎機是典型的運氣和財富的遊戲，結合了台灣獨特的文化、食物特色 ，讓你在遊玩的過程中更有樂趣。
       `,
     },
     app: React.lazy(() => import('./Slots')),
@@ -54,7 +54,7 @@ export const GAMES: GameBundle[] = [
       name: 'HiLo',
       image: '/games/hilo.png',
       description: `
-        HiLo is a game of foresight and luck, challenging players to guess whether the next card will be higher or lower. Make consecutive correct guesses to increase your winnings, and decide when to cash out for maximum rewards.
+        使用大腦、策略，預測下一張的高低，根據預測的難易度提供不同的獎金。
       `,
       background: '#ff4f4f',
     },
@@ -79,7 +79,7 @@ export const GAMES: GameBundle[] = [
       name: 'Roulette',
       image: '/games/roulette.png',
       description: `
-        Roulette brings the classic wheel-spinning game to life with a digital twist. Bet on where the ball will land and watch as the wheel decides your fate. With straightforward rules and the chance for big wins, Roulette is a timeless game of chance.
+        在格子下藏有金錢。揭開的格子越多，獎勵就會越高，但要小心，格子裡隱藏了5個地雷，一旦碰到你就會破產。你隨時可以選擇兌現。在這個遊戲中，融合了台灣傳統的戳戳樂元素，每次揭開格子都充滿了驚喜與挑戰，讓你在冒險中體驗台灣童玩般的樂趣！
       `,
       background: '#1de87e',
     },
@@ -92,7 +92,7 @@ export const GAMES: GameBundle[] = [
       image: '/games/plinko.png',
       name: 'Plinko',
       description: `
-        Plinko is played by dropping chips down a pegged board where they randomly fall into slots with varying win amounts. Each drop is a mix of anticipation and strategy, making Plinko an endlessly entertaining game of chance.
+        彈珠台遊戲是透過將籌碼從釘板上方掉落，籌碼會隨機落入不同的獎勵槽中，每個槽的獎金各不相同。每一次掉落都充滿期待與策略，這使得彈珠台成為一個無窮樂趣的運氣遊戲。在這個遊戲中加入台灣傳統的彈珠台元素，每次操作都像是在挑戰夜市裡的彈珠機，讓人回味無窮！
         ⚠️ Under development. Results shown might be incorrect. ⚠️
       `,
     },
@@ -105,7 +105,7 @@ export const GAMES: GameBundle[] = [
       image: '/games/crash.png',
       name: 'Crash',
       description: `
-      Predict a multiplier target and watch a rocket attempt to reach it. If the rocket crashes before the target, the player loses; if it reaches or exceeds the target, the player wins.
+      預測一個倍率目標，並看著火箭嘗試到達該目標。如果火箭在到達目標前墜毀，玩家將失敗；如果火箭達到或超過目標，玩家將獲勝。這款遊戲融合了嫦娥奔月的傳說，每當火箭飛向目標，就如同嫦娥乘著火箭奔向月亮，充滿了冒險與浪漫的色彩。
       `,
     },
     app: React.lazy(() => import('./CrashGame')),
