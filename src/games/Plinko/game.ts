@@ -9,9 +9,9 @@ const SIMULATIONS = 150
 export const PLINKO_RAIUS = 10
 export const PEG_RADIUS = 12
 const RESTISTUTION = .4
-const GRAVITY = 1
+const GRAVITY = 1.2
 // How far from the center plinkos can spawn
-const SPAWN_OFFSET_RANGE = 15
+const SPAWN_OFFSET_RANGE = 16
 
 export const bucketWallHeight = 60
 export const bucketHeight = bucketWallHeight
