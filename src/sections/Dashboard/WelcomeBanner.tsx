@@ -115,20 +115,20 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Welcome to Gamba v2 👋</h1>
+        <h1>歡迎來到 金紙JMoney湯姆熊遊樂中心 </h1>
         <p>
-          A fair, simple and decentralized casino on Solana.
+          一個挑戰信仰與自己財庫的遊樂園
         </p>
       </div>
       <Buttons>
         <button onClick={copyInvite}>
-          💸 Copy Invite
+          💸 邀請連結 (反傭)
         </button>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-          🚀 Add Liquidity
+        <button onClick={() => window.open('https://reurl.cc/E6mXR0')}>
+          🚀 購買JMONEY
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+        <button onClick={() => window.open('https://line.me/ti/g2/i2eDX3flftsLbiz6Pdq3osziqGuu6cJg-_HmEA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default')}>
+          💬 金紙幣 LINE 官方社群
         </button>
       </Buttons>
     </Welcome>
