@@ -46,7 +46,7 @@ export const POOLS = [
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
   // JMoney:
-  lp('CPYzkfuCres8LAz22MdoMFdbPXfLLAHE7pUUh3sqVDuq'),
+  lp('HZNnmhAY6xfq2iKRyBTEvTVeoTYJzpkK8mfnfG8Ppump'),
 ]
 
 // The default token to be selected
