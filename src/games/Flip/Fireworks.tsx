@@ -1,3 +1,4 @@
+// src/games/Flip/Fireworks.tsx
 import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
@@ -23,7 +24,7 @@ export const Fireworks = () => {
         randomInRange(-1, 1)
       ))
     }
-    
+
     particles.current.geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     velocities.current = tempVelocities
   }, [])
@@ -34,7 +35,7 @@ export const Fireworks = () => {
       positions[i * 3] += velocities.current[i].x * 0.1
       positions[i * 3 + 1] += velocities.current[i].y * 0.1
       positions[i * 3 + 2] += velocities.current[i].z * 0.1
-      velocities.current[i].y -= 0.02 // Apply gravity
+      velocities.current[i].y -= 0.02 // 模擬重力
     }
     particles.current.geometry.attributes.position.needsUpdate = true
   })
