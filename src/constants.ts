@@ -52,7 +52,7 @@ export const DEFAULT_POOL = POOLS[0]
 
 /**
  * List of token metadata for the supported tokens
- * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
+ * Alternatively, we can provide a fetcher method to automatically fetch metadata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
@@ -85,8 +85,7 @@ export const TOS_HTML = `
   <p><b>6. 許可聲明免責：</b>非經營性賭場；僅用於模擬增加JMoney的娛樂實用性。</p>
   <p><b>7. 智能合約：</b>遊戲公正且透明地進行。</p>
   <p><b>8. 數據隱私：</b>任何數據皆以Web3與當地法律團隊不會持有任何個資</p>
-  <p><b>9. 有任何問題：</b>可以洽詢金紙JMoney社團</p>`;
-
+  <p><b>9. 有任何問題：</b>可以洽詢金紙JMoney社團</p>
 `
 
 /**
