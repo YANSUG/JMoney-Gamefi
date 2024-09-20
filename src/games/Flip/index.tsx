@@ -1,21 +1,4 @@
-import { Canvas } from '@react-three/fiber'
-import { GambaUi, useSound } from 'gamba-react-ui-v2'
-import { useGamba } from 'gamba-react-v2'
-import React from 'react'
-import { Coin, TEXTURE_HEADS, TEXTURE_TAILS } from './Coin'
-import { Effect } from './Effect'
-
-import SOUND_COIN from './coin.mp3'
-import SOUND_LOSE from './lose.mp3'
-import SOUND_WIN from './win.mp3'
-
-const SIDES = {
-  heads: [2, 0],
-  tails: [0, 2],
-}
-const WAGER_OPTIONS = [1, 5, 10, 50, 100]
-
-type Side = keyof typeof SIDES
+import { Fireworks } from './Fireworks'
 
 function Flip() {
   const game = GambaUi.useGame()
@@ -84,6 +67,10 @@ function Flip() {
 
           {flipping && <Effect color="white" />}
           {win && <Effect color="#42ff78" />}
+          
+          {/* 當贏得遊戲時顯示煙火 */}
+          {win && <Fireworks />}
+
           <ambientLight intensity={3} />
           <directionalLight
             position-z={1}
@@ -121,3 +108,4 @@ function Flip() {
 }
 
 export default Flip
+
