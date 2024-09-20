@@ -19,7 +19,7 @@ export const GAMES: GameBundle[] = [
       name: 'Dice',
       image: '/games/dice.png',
       description: `
-       擲筊是一種簡單卻刺激的賭注遊戲：選擇聖筊或陰筊，賭注翻倍或全數輸光。這款簡單且高風險的遊戲，每次擲筊都在考驗你的運氣、決策力，甚至是你的信仰力。
+       終極密碼是一款猜測數字在不在區間的遊戲，可以自己選擇獲勝區域 (機率越高，獎勵越低；機率越低，獎勵越高)，要貪婪還是恐懼，就憑你的一念之間。
       `,
     },
     app: React.lazy(() => import('./Dice')),
