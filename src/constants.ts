@@ -77,15 +77,16 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
 
 /** HTML to display to user that they need to accept in order to continue */
 export const TOS_HTML = `
-  <p><b>1. Age Requirement:</b> Must be at least 18 years old.</p>
-  <p><b>2. Legal Compliance:</b> Follow local laws responsibly.</p>
-  <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
-  <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
-  <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
-  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for simulation only.</p>
-  <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
-  <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
-  <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
+  <p><b>1. 年齡要求：</b>加密或幣遊玩必須至少18歲，未滿18遂請玩免費的試玩幣。</p>
+  <p><b>2. 法律遵守：</b>本平台僅提供玩家遊玩，不提供任何出金法幣管道</p>
+  <p><b>3. 風險認知：</b>遊戲涉及風險；沒有保證的獲勝。</p>
+  <p><b>4. 無保證：</b>遊戲按「智能合約」提供機率計算</p>
+  <p><b>5. 責任限制：</b>投資理財有賺有賠，請自行承擔風險</p>
+  <p><b>6. 許可聲明免責：</b>非經營性賭場；僅用於模擬增加JMoney的娛樂實用性。</p>
+  <p><b>7. 智能合約：</b>遊戲公正且透明地進行。</p>
+  <p><b>8. 數據隱私：</b>任何數據皆以Web3與當地法律團隊不會持有任何個資</p>
+  <p><b>9. 有任何問題：</b>可以洽詢金紙JMoney社團</p>`;
+
 `
 
 /**
