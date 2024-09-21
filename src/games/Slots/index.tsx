@@ -187,6 +187,7 @@ export default function Slots() {
                     messages={[
                       '選擇下注、按下旋轉!',
                       '今天的你很幸運',
+                      '想吃甚麼台灣美食呢?',
                     ]}
                   />
                 ) : (
