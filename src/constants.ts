@@ -88,7 +88,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
 
 /** HTML to display to user that they need to accept in order to continue */
 export const TOS_HTML = `
-  <p><b>1. 年齡要求：</b>加密或幣遊玩必須至少18歲，未滿18遂請玩免費的試玩幣。</p>
+  <p><b>1. 年齡要求：</b>加密或幣遊玩必須至少18歲，未滿18歲請玩免費的試玩幣。</p>
   <p><b>2. 法律遵守：</b>本平台僅提供玩家遊玩，不提供任何出金法幣管道</p>
   <p><b>3. 風險認知：</b>遊戲涉及風險；沒有保證的獲勝。</p>
   <p><b>4. 無保證：</b>遊戲按「智能合約」提供機率計算</p>
