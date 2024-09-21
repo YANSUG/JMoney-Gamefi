@@ -3,6 +3,7 @@ import { GambaUi, TokenValue, useCurrentPool, useSound, useWagerInput } from 'ga
 import { useGamba } from 'gamba-react-v2'
 import React from 'react'
 import Slider from './Slider'
+import Fireworks from './Fireworks'
 import { SOUND_LOSE, SOUND_PLAY, SOUND_TICK, SOUND_WIN } from './constants'
 import { Container, Result, RollUnder, Stats } from './styles'
 
@@ -27,6 +28,7 @@ export default function Dice() {
   const pool = useCurrentPool()
   const [resultIndex, setResultIndex] = React.useState(-1)
   const [rollUnderIndex, setRollUnderIndex] = React.useState(Math.floor(DICE_SIDES / 2))
+  const [showFireworks, setShowFireworks] = React.useState(false)
   const sounds = useSound({
     win: SOUND_WIN,
     play: SOUND_PLAY,
@@ -65,6 +67,8 @@ export default function Dice() {
 
     if (result.resultIndex < rollUnderIndex) {
       sounds.play('win')
+      setShowFireworks(true)
+      setTimeout(() => setShowFireworks(false), 5000) // 顯示5秒後消失
     } else {
       sounds.play('lose')
     }
@@ -75,6 +79,7 @@ export default function Dice() {
       <GambaUi.Portal target="screen">
         <GambaUi.Responsive>
           <Container>
+            {showFireworks && <Fireworks />}
             <RollUnder>
               <div>
                 <div>{rollUnderIndex + 1}</div>
