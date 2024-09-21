@@ -75,6 +75,15 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdPrice: 0,
   },
+  {
+    mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
+    name: 'Bonk',
+    symbol: 'Bonk',
+    image: 'https://i.ibb.co/MpLfhFQ/23095.png',
+    baseWager: 1e8,
+    decimals: 6,
+    usdPrice: 0,
+  },
 ]
 
 /** HTML to display to user that they need to accept in order to continue */
