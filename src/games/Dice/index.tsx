@@ -86,13 +86,13 @@ export default function Dice() {
                 <div>
                   {(rollUnderIndex / DICE_SIDES * 100).toFixed(0)}%
                 </div>
-                <div>Win Chance</div>
+                <div>獲勝機率</div>
               </div>
               <div>
                 <div>
                   {multiplier.toFixed(2)}x
                 </div>
-                <div>Multiplier</div>
+                <div>獎勵倍數</div>
               </div>
               <div>
                 {maxWin > pool.maxPayout ? (
@@ -104,7 +104,7 @@ export default function Dice() {
                     <TokenValue suffix="" amount={maxWin} />
                   </div>
                 )}
-                <div>Payout</div>
+                <div>獲勝獎金</div>
               </div>
             </Stats>
             <div style={{ position: 'relative' }}>
@@ -138,7 +138,7 @@ export default function Dice() {
           onChange={setWager}
         />
         <GambaUi.PlayButton onClick={play}>
-          Roll
+          開始猜測
         </GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
