@@ -39,14 +39,14 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
-  // SOL:
-  lp('So11111111111111111111111111111111111111112'),
   // JMoney:
   lp('HZNnmhAY6xfq2iKRyBTEvTVeoTYJzpkK8mfnfG8Ppump'),
+  // SOL:
+  lp('So11111111111111111111111111111111111111112'),
   // Bonk:
   lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
+  // Fake token:
+  lp(FAKE_TOKEN_MINT),
 ]
 
 // The default token to be selected
