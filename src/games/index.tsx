@@ -66,7 +66,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       name: 'Mines',
       description: `
-        There's money hidden beneath the squares. The reward will increase the more squares you reveal, but watch out for the 5 hidden mines. Touch one and you'll go broke. You can cash out at any time.
+        在格子下藏有金錢。揭開的格子越多，獎勵就會越高，但要小心，格子裡隱藏了5個地雷，一旦碰到你就會破產。你隨時可以選擇兌現。在這個遊戲中，融合了台灣傳統的戳戳樂元素，每次揭開格子都充滿了驚喜與挑戰，讓你在冒險中體驗台灣童玩般的樂趣！
       `,
       image: '/games/mines.png',
       background: '#8376ff',
@@ -79,7 +79,7 @@ export const GAMES: GameBundle[] = [
       name: 'Roulette',
       image: '/games/roulette.png',
       description: `
-        在格子下藏有金錢。揭開的格子越多，獎勵就會越高，但要小心，格子裡隱藏了5個地雷，一旦碰到你就會破產。你隨時可以選擇兌現。在這個遊戲中，融合了台灣傳統的戳戳樂元素，每次揭開格子都充滿了驚喜與挑戰，讓你在冒險中體驗台灣童玩般的樂趣！
+        俄羅斯輪盤，猜測數字、基偶數、顏色 ，依照預測難度獲得不等的獎勵。
       `,
       background: '#1de87e',
     },
@@ -92,8 +92,7 @@ export const GAMES: GameBundle[] = [
       image: '/games/plinko.png',
       name: 'Plinko',
       description: `
-        彈珠台遊戲是透過將籌碼從釘板上方掉落，籌碼會隨機落入不同的獎勵槽中，每個槽的獎金各不相同。每一次掉落都充滿期待與策略，這使得彈珠台成為一個無窮樂趣的運氣遊戲。在這個遊戲中加入台灣傳統的彈珠台元素，每次操作都像是在挑戰夜市裡的彈珠機，讓人回味無窮！
-        ⚠️ Under development. Results shown might be incorrect. ⚠️
+        彈珠台遊戲是透過將籌碼從釘板上方掉落，籌碼會隨機落入不同的獎勵槽中，每個槽的獎金各不相同。每一次掉落都充滿期待與策略，這使得彈珠台成為一個無窮樂趣的運氣遊戲。在這個遊戲中加入台灣傳統的彈珠台元素，每次操作都像是在挑戰夜市裡的彈珠機，讓人回味無窮！    
       `,
     },
     app: React.lazy(() => import('./Plinko')),
