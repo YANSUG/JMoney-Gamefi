@@ -15,8 +15,8 @@ const SPAWN_OFFSET_RANGE = 16
 
 export const bucketWallHeight = 60
 export const bucketHeight = bucketWallHeight
-export const barrierHeight = bucketWallHeight * 1.2
-export const barrierWidth = 4
+export const barrierHeight = bucketWallHeight * 1.3
+export const barrierWidth = 5
 
 interface PlinkoContactEvent {
   plinko?: Matter.Body
