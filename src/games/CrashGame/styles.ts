@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import rocketAnimation from './rocket.gif'
+import rocketAnimation from './006__vivipic.png'
 
 const generateMultipleBoxShadows = (n: number) => {
   const maxX = window.innerWidth
