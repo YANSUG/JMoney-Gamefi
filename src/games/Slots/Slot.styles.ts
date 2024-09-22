@@ -10,7 +10,7 @@ export const StyledSpinner = styled.div`
     }
   }
 
-  --num-items: 5;
+  --num-items: 6;
   --spin-speed: .6s;
 
   position: absolute;
