@@ -1,6 +1,6 @@
 export const WAGER_AMOUNTS = [100_000, 1_000_000]
 
-export const MAX_CARD_SHOWN = 5
+export const MAX_CARD_SHOWN = 3
 
 export const RANK_SYMBOLS: Record<number, string> = {
   0: '2',
