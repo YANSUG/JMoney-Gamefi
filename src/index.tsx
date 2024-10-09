@@ -34,7 +34,7 @@ function Root() {
               tokens={TOKEN_METADATA}
               fetcher={TOKEN_METADATA_FETCHER}
             >
-              <SendTransactionProvider priorityFee={200_100}>
+              <SendTransactionProvider priorityFee={200_50}>
                 <GambaProvider>
                   <GambaPlatformProvider
                     creator={PLATFORM_CREATOR_ADDRESS}
