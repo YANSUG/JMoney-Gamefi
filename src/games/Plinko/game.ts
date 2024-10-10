@@ -4,14 +4,14 @@ const WIDTH = 700
 const HEIGHT = 700
 
 // How many plinkos to simulate to find desired result. More is slower but more likely to yield desired result
-const SIMULATIONS = 60
+const SIMULATIONS = 100
 // Size of the plinko
 export const PLINKO_RAIUS = 10
 export const PEG_RADIUS = 12
 const RESTISTUTION = .4
-const GRAVITY = 1.2
+const GRAVITY = 1
 // How far from the center plinkos can spawn
-const SPAWN_OFFSET_RANGE = 16
+const SPAWN_OFFSET_RANGE = 12
 
 export const bucketWallHeight = 60
 export const bucketHeight = bucketWallHeight
@@ -55,7 +55,7 @@ export class Plinko {
 
     const secondHalf = [...unique].slice(1)
     const firstHalf = [...secondHalf].reverse()
-    const center = [unique[0], unique[0], unique[0]]
+    const center = [unique[0], unique[0], unique[0], unique[1]]
     const buckets = [
       ...firstHalf,
       ...center,
