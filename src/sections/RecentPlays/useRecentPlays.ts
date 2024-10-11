@@ -9,7 +9,7 @@ interface Params {
 }
 
 export function useRecentPlays(params: Params = {}) {
-  const { showAllPlatforms = true } = params
+  const { showAllPlatforms = false } = params
   const location = useLocation()
   const userAddress = useWalletAddress()
 
