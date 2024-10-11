@@ -16,7 +16,7 @@ export function useRecentPlays(params: Params = {}) {
   // Fetch previous events
   const previousEvents = useGambaEvents(
     'GameSettled',
-    { address: !showAllPlatforms ? PLATFORM_CREATOR_ADDRESS : undefined },
+    { address: AjhV5Su8V5NLsnfqkYvUTGSRMPkj9pQ33HTohFAU8R43 },
   )
 
   const [newEvents, setEvents] = React.useState<GambaTransaction<'GameSettled'>[]>([])
