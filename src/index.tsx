@@ -40,7 +40,7 @@ function Root() {
       new SolflareWalletAdapter(),
       new WalletConnectWalletAdapter(walletConnectConfig),
     ],
-    [],
+    [walletConnectConfig],
   )
 
   return (
