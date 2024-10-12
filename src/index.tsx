@@ -18,7 +18,8 @@ const root = ReactDOM.createRoot(document.getElementById('root')!)
 const walletConnectConfig: WalletConnectWalletAdapterConfig = {
   network: WalletAdapterNetwork.Mainnet,
   options: {
-    relayUrl: 'https://relay.walletconnect.org',
+    projectId: 'fad831683df53cd65e7cd45f9f849672',  // Use your actual project ID here
+    relayUrl: 'wss://relay.walletconnect.org',
     qrcodeModalOptions: {
       mobileLinks: [
         'okx',         // OKX Wallet
