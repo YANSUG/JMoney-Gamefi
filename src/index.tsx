@@ -1,7 +1,7 @@
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react'
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css'
-import { PhantomWalletAdapter, SolflareWalletAdapter, WalletConnectWalletAdapter, WalletConnectWalletAdapterConfig } from '@solana/wallet-adapter-wallets'
+import { PhantomWalletAdapter, SolflareWalletAdapter, WalletConnectWalletAdapter, WalletConnectWalletAdapterConfig, } from '@solana/wallet-adapter-wallets'
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { GambaPlatformProvider, ReferralProvider, TokenMetaProvider } from 'gamba-react-ui-v2'
 import { GambaProvider, SendTransactionProvider } from 'gamba-react-v2'
@@ -16,10 +16,21 @@ const root = ReactDOM.createRoot(document.getElementById('root')!)
 
 // Configuration for WalletConnectWalletAdapter
 const walletConnectConfig: WalletConnectWalletAdapterConfig = {
-  network: WalletAdapterNetwork.Mainnet, 
-  options: { 
-    relayUrl: 'https://relay.walletconnect.org', 
-  }
+  network: WalletAdapterNetwork.Mainnet,
+  options: {
+    relayUrl: 'https://relay.walletconnect.org',
+    qrcodeModalOptions: {
+      mobileLinks: [
+        'okx',         // OKX Wallet
+        'phantom',     // Phantom Wallet
+        'solflare',    // Solflare Wallet
+        'trust',       // Trust Wallet
+        'rainbow',     // Rainbow Wallet
+        'metamask',    // MetaMask Wallet
+        'coin98'       // Coin98 Wallet
+      ],
+    },
+  },
 };
 
 function Root() {
