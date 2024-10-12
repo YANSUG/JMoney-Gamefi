@@ -1,7 +1,7 @@
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react'
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css'
-import { PhantomWalletAdapter, SolflareWalletAdapter, walletconnectAdapter } from '@solana/wallet-adapter-wallets'
+import { PhantomWalletAdapter, SolflareWalletAdapter} from '@solana/wallet-adapter-wallets'
 import { GambaPlatformProvider, ReferralProvider, TokenMetaProvider } from 'gamba-react-ui-v2'
 import { GambaProvider, SendTransactionProvider } from 'gamba-react-v2'
 import React from 'react'
@@ -18,7 +18,6 @@ function Root() {
     () => [
       new PhantomWalletAdapter(),
       new SolflareWalletAdapter(),
-      new walletconnectAdapter(),
     ],
     [],
   )
