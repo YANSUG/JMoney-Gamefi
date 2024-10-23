@@ -48,8 +48,8 @@ function ErrorHandler() {
 }
 
 export default function App() {
-  const newcomer = useUserStore((state) => state.newcomer)
-  const set = useUserStore((state) => state.set)
+  const newcomer = useUserStore((state) => state.newcomer);
+  const set = useUserStore((state) => state.set);
 
   return (
     <>
@@ -59,9 +59,7 @@ export default function App() {
           <TosWrapper>
             <TosInner dangerouslySetInnerHTML={{ __html: TOS_HTML }} />
           </TosWrapper>
-          <p>
-            By playing on our platform, you confirm your compliance.
-          </p>
+          <p>By playing on our platform, you confirm your compliance.</p>
           <GambaUi.Button main onClick={() => set({ newcomer: false })}>
             Acknowledge
           </GambaUi.Button>
@@ -76,9 +74,8 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
-        <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
-        <RecentPlays />
       </MainWrapper>
     </>
   )
 }
+
