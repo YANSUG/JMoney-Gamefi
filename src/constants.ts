@@ -126,7 +126,7 @@ export const TOKENLIST = [
     image:
       "https://i.ibb.co/fvK8KVd/icon-512.png",
     decimals: 9,
-    baseWager: 2000000e5,
+    baseWager: 1000e9,
   },
 
   // Add New Public pool
