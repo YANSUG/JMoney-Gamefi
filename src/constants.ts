@@ -118,13 +118,13 @@ export const TOKENLIST = [
     decimals: 9,
     baseWager: 0.01e9,
   },
-  // GUAC
+  // JMoney
   {
-    mint: new PublicKey("AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR"),
-    name: "Guacamole",
-    symbol: "GUAC",
+    mint: new PublicKey("HZNnmhAY6xfq2iKRyBTEvTVeoTYJzpkK8mfnfG8Ppump"),
+    name: "Joss money",
+    symbol: "Jmoney",
     image:
-      "https://bafkreiccbqs4jty2yjvuxp5x7gzgepquvv657ttauaqgxfhxghuz5us54u.ipfs.nftstorage.link/",
+      "https://ibb.co/74TgTxt",
     decimals: 5,
     baseWager: 2000000e5,
   },
