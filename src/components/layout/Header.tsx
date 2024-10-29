@@ -35,21 +35,20 @@ export default function Header() {
         <div className="max-sm:text-xs max-sm:gap-1 flex gap-2.5 items-center relative">
           {bonusHelp && (
             <Modal onClose={() => setBonusHelp(false)}>
-              <h1>You have a bonus!</h1>
+              <h1>您有一個獎勵！</h1>
               <p>
-                You have{" "}
+                您有
                 <b>
                   <TokenValue amount={balance.bonusBalance} />
-                </b>{" "}
-                worth of free plays. This bonus will be applied automatically
-                when you play.
+                </b>
+                的免費遊玩次數。這些獎勵會在您遊玩時自動使用。
               </p>
             </Modal>
           )}
           {jackpotHelp && (
             <Modal onClose={() => setJackpotHelp(false)}>
               <div className="text-lg font-semibold text-center">
-                {token.name} Jackpot Details
+                {token.name} 頭獎詳情
               </div>
               {pool.jackpotBalance > 0 && (
                 <div className="flex text-[#003c00] rounded-lg bg-[#03ffa4] px-2.5 py-0.5 uppercase font-bold">
@@ -58,26 +57,22 @@ export default function Header() {
               )}
               <div className="mt-4">
                 <p>
-                  The Jackpot grows with each game played, funded by fees from
-                  unsuccessful attempts to win it. Winning the jackpot not only
-                  grants substantial rewards but also recycles a tiny portion of
-                  the winnings back into the main liquidity pool, sustaining the
-                  games economy.
+                  頭獎隨著每場遊戲的進行而增長，由未能贏得頭獎的玩家支付的費用來累積。贏得頭獎不僅能獲得豐厚的獎勵，還會將一小部分獎金回流至主要流動性池，以維持遊戲經濟的運作。
                 </p>
                 <div className="mt-4">
                   <div>
-                    <strong>Pool Fee:</strong> {pool.poolFee}%
+                    <strong>池費：</strong> {pool.poolFee}%
                   </div>
                   <div>
-                    <strong>Liquidity:</strong>{" "}
+                    <strong>流動性：</strong>
                     <TokenValue amount={Number(pool.liquidity)} />
                   </div>
                   <div>
-                    <strong>Minimum Wager:</strong>{" "}
+                    <strong>最低投注：</strong>
                     <TokenValue amount={pool.minWager} />
                   </div>
                   <div>
-                    <strong>Maximum Payout:</strong>{" "}
+                    <strong>最高賠付：</strong>
                     <TokenValue amount={pool.maxPayout} />
                   </div>
                 </div>
@@ -88,7 +83,7 @@ export default function Header() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      View Pool on Explorer
+                      在區塊鏈瀏覽器上查看池
                     </a>
                   </GambaUi.Button>
                 </div>
