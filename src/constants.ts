@@ -124,7 +124,7 @@ export const TOKENLIST = [
     name: "Joss money",
     symbol: "Jmoney",
     image:
-      "https://github.com/YANSUG/JMoney-Gamefi/blob/main/public/icon-512.png",
+      "https://i.ibb.co/fvK8KVd/icon-512.png",
     decimals: 9,
     baseWager: 2000000e5,
   },
