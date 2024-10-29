@@ -48,7 +48,7 @@ export default function HomePage() {
           <div className="bg-[#15152e]/80 rounded-lg p-4 lg:col-span-2 text-center lg:text-left">
             <div className=" flex items-center justify-center md:justify-start">
               <h1 className="text-2xl md:text-4xl font-bold text-white drop-shadow-md">
-                Welcome to Gamba
+                歡迎來到金紙幣Web3遊樂場
               </h1>
               <img src="/wave.gif" className="h-14" alt="Gamba Logo" />
             </div>
