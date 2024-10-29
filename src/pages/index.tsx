@@ -18,9 +18,9 @@ export default function HomePage() {
     const referralLink = `${location.host}?code=${wallet.publicKey.toString()}`;
     navigator.clipboard.writeText(referralLink);
     toast.success(
-      `Copied! Share your link to earn a ${
+      `已複製！分享您的連結，當玩家使用此平台時，您可獲得 ${
         PLATFORM_REFERRAL_FEE * 100
-      }% fee when players use this platform`,
+      }% 的手續費`,
     );
   };
   return (
@@ -48,57 +48,55 @@ export default function HomePage() {
           <div className="bg-[#15152e]/80 rounded-lg p-4 lg:col-span-2 text-center lg:text-left">
             <div className=" flex items-center justify-center md:justify-start">
               <h1 className="text-2xl md:text-4xl font-bold text-white drop-shadow-md">
-                歡迎來到金紙幣Web3遊樂場
+                歡迎來到金紙幣 Web3 遊樂場
               </h1>
-              <img src="/wave.gif" className="h-14" alt="Gamba Logo" />
+              <img src="/wave.gif" className="h-14" alt="Gamba 標誌" />
             </div>
             <p className="my-2 text-white drop-shadow">
-              The gambleFi protocol with end-to-end tools for on-chain
-              degeneracy on Solana.
+              這是一個在 Solana 上提供端到端鏈上的遊樂場。
             </p>
             <p className="my-2 text-sm max-w-sm">
-              Share your link to earn a {PLATFORM_REFERRAL_FEE * 100}% fee on
-              each play when players use this platform using your code.
+              分享您的連結，當玩家使用您的代碼在此平台上遊玩時，您可獲得 {PLATFORM_REFERRAL_FEE * 100}% 的手續費。
             </p>
             <button
-              className="bg-[#8851ff] hover:bg-[#9564ff] rounded-lg p-2 text-xs bg-"
+              className="bg-[#8851ff] hover:bg-[#9564ff] rounded-lg p-2 text-xs"
               onClick={copyInvite}
             >
-              Copy Link
+              複製連結
             </button>
           </div>
           <div className="whitespace-nowrap grid grid-cols-2 grid-rows-2 gap-2 mt-5 md:flex md:flex-col md:mt-0 md:justify-start">
             <button
               onClick={() =>
-                window.open("https://github.com/BankkRoll/Gamba-V2-Next.js")
+                window.open("https://solscan.io/token/HZNnmhAY6xfq2iKRyBTEvTVeoTYJzpkK8mfnfG8Ppump")
               }
               className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
             >
-              👨‍💻 Build your own
+              Solscan 區塊鏈查詢
             </button>
             <button
-              onClick={() => window.open("https://gamba.so/docs")}
+              onClick={() => window.open("https://reurl.cc/Klzepn")}
               className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
             >
-              📖 Gamba Docs
+              ORCA 去中心化交易所
             </button>
             <button
-              onClick={() => window.open("https://explorer.gamba.so")}
+              onClick={() => window.open("https://reurl.cc/oybR1M")}
               className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
             >
-              🌐 Explorer
+              Raydium 中心化交易所
             </button>
             <button
-              onClick={() => window.open("https://discord.com/invite/HSTtFFwR")}
+              onClick={() => window.open("https://line.me/ti/g2/i2eDX3flftsLbiz6Pdq3osziqGuu6cJg-_HmEA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default")}
               className="rounded-lg p-3 bg-white hover:bg-gray-200 hover:-translate-y-0.5 transform text-black transition-all duration-200 ease-in-out cursor-pointer shadow-lg hover:shadow-xl"
             >
-              💬 Join Discord
+              金紙幣JMoney 官方LINE社群
             </button>
           </div>
         </div>
-        <h2 className="text-2xl font-bold text-center">Games</h2>
+        <h2 className="text-2xl font-bold text-center">遊戲</h2>
         <GameGrid />
-        <h2 className="text-2xl font-bold text-center">Recent Plays</h2>
+        <h2 className="text-2xl font-bold text-center">最近遊玩紀錄</h2>
         <RecentPlays />
       </div>
     </>
