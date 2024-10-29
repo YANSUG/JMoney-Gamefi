@@ -23,7 +23,7 @@ interface TransactionStepperProps {
 }
 
 const TransactionStepper: FC<TransactionStepperProps> = ({ currentStep }) => {
-  const steps = ["Signing", "Sending", "Settling"];
+  const steps = ["簽署中", "發送中", "結算中"];
 
   return (
     <div className="flex justify-center">
@@ -85,8 +85,8 @@ export function CustomError() {
     <>
       <GambaUi.Portal target="error">
         <GambaUi.Responsive>
-          <h1>😭 Oh no!</h1>
-          <p>Something went wrong</p>
+          <h1>😭 糟糕！</h1>
+          <p>發生了錯誤</p>
         </GambaUi.Responsive>
       </GambaUi.Portal>
     </>
@@ -169,7 +169,7 @@ export default function CustomRenderer() {
           <img height="150px" src={imagePath} alt={`${game.meta.name}`} />
           <p>{game.meta.description}</p>
           <div>
-            <h2 className="text-xl">Volatility</h2>
+            <h2 className="text-xl">波動性</h2>
             <VolatilityStars count={game.meta.volatility} />
           </div>
         </Modal>
@@ -211,8 +211,8 @@ export default function CustomRenderer() {
                 const newVolume = audioStore.volume === 0 ? 1 : 0;
                 audioStore.set(newVolume);
                 newVolume === 0
-                  ? toast.error("Muted")
-                  : toast.success("Unmuted");
+                  ? toast.error("已靜音")
+                  : toast.success("已取消靜音");
               }}
             >
               {audioStore.volume === 0 ? (
