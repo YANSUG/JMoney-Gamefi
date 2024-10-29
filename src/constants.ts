@@ -125,8 +125,8 @@ export const TOKENLIST = [
     symbol: "Jmoney",
     image:
       "https://i.ibb.co/fvK8KVd/icon-512.png",
-    decimals: 9,
-    baseWager: 1000e9,
+    decimals: 6,
+    baseWager: 1000e3,
   },
 
   // Add New Public pool
