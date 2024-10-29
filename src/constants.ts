@@ -8,7 +8,7 @@ import { PublicKey } from "@solana/web3.js";
  ******************************************/
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.05; // 5% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.01; // 5% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.01; // 0.1%
@@ -27,26 +27,26 @@ export const LIVE_EVENT_TOAST = true;
 
 export const FOOTER_LINKS = [
   {
-    href: "https://github.com/BankkRoll/Gamba-V2-Next.js",
-    title: "👨‍💻 Build your own",
+    href: "https://explorer.gamba.so/user",
+    title: "刪除帳號(刪除帳號取回Sol)",
   },
   {
-    href: "https://explorer.gamba.so/create",
-    title: "🚀 Create Pool",
+    href: "https://explorer.gamba.so/pool/A5zUmE22MHvxWfCtwFTxPtvbCdhZ7gPBVq812atmKKDR",
+    title: "金紙幣獎池",
   },
   {
-    href: "https://gamba.so/docs",
-    title: "📖 Gamba Docs",
+    href: "https://gmgn.ai/sol/token/HZNnmhAY6xfq2iKRyBTEvTVeoTYJzpkK8mfnfG8Ppump",
+    title: "GMGN",
   },
   {
-    href: "https://discord.com/invite/HSTtFFwR",
-    title: "💬 Join Discord",
+    href: "https://discord.gg/qDYHXqZk",
+    title: "Join Discord",
   },
 ];
 
 export const FOOTER_TWITTER_LINK = {
-  href: "https://twitter.com/bankkroll_eth",
-  title: "© 2024 Template made with ❤️ by Bankk",
+  href: "https://x.com/Jmoney20240818",
+  title: "金紙幣CTO社群所擁有",
 };
 
 /******************************************
