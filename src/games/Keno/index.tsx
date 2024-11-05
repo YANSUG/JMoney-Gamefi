@@ -148,24 +148,22 @@ export default function Keno() {
   };
 
   // 計算賠率的函數
-  const calculatePayoutMultiplier = (selectionCount: number) => {
-    // 這裡是基於選擇數字的假設賠率，可以根據實際的遊戲規則調整
-    const payoutMultipliers = {
-      1: 3,
-      2: 6,
-      3: 10,
-      4: 15,
-      5: 20,
-      6: 30,
-      7: 40,
-      8: 50,
-      9: 75,
-      10: 100,
-    };
-    return payoutMultipliers[selectionCount] || 1;
+const calculatePayoutMultiplier = (selectionCount: number) => {
+  const payoutMultipliers: Record<number, number> = {
+    1: 3,
+    2: 6,
+    3: 10,
+    4: 15,
+    5: 20,
+    6: 30,
+    7: 40,
+    8: 50,
+    9: 75,
+    10: 100,
   };
 
-  return (
+  return payoutMultipliers[selectionCount] || 1;
+};
     <>
       <GambaUi.Portal target="screen">
         <GambaUi.Responsive>
