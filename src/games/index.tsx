@@ -49,9 +49,9 @@ export const GAMES: GameBundle<GameMeta>[] = [
     id: "hilo",
     meta: {
       background: "#F44336",
-      name: "高低牌",
+      name: "比大小",
       image: "/games/logo.png",
-      description: `高低牌邀請玩家進入一個充滿預見和機會的世界，每一個決定都有可能解鎖無限的財富。踏上預測之旅，預測下一張牌是升還是降，掌握連續正確猜測的技巧來增加贏利，策略性地決定何時收手以獲得最大回報，使每一場遊戲都成為技巧和直覺的刺激考驗。`,
+      description: `比大小邀請玩家進入一個充滿預見和機會的世界，每一個決定都有可能解鎖無限的財富。踏上預測之旅，預測下一張牌是升還是降，掌握連續正確猜測的技巧來增加贏利，策略性地決定何時收手以獲得最大回報，使每一場遊戲都成為技巧和直覺的刺激考驗。`,
       volatility: 2,
     },
     props: { logo: "/logo.svg" },
@@ -61,7 +61,7 @@ export const GAMES: GameBundle<GameMeta>[] = [
     id: "mines",
     meta: {
       background: "#9C27B0",
-      name: "掃雷",
+      name: "踩地雷",
       image: "/games/logo.png",
       description: `掃雷是戰略的傑作，玩家在尋找隱藏寶藏的同時要謹慎揭開方格，因為隱藏的地雷可能隨時結束你的探險。每次揭開都會增加風險，為勇敢的玩家帶來充滿懸念和精心計算風險的心跳體驗，保證一場難忘的遊戲冒險。`,
       volatility: 2,
@@ -83,9 +83,9 @@ export const GAMES: GameBundle<GameMeta>[] = [
     id: "plinko",
     meta: {
       background: "#00BCD4",
-      name: "普林科",
+      name: "彈珠檯",
       image: "/games/logo.png",
-      description: `普林科將投幣的動作轉化為藝術，每一次投幣都充滿著期待與策略的融合。見證籌碼在釘板上滑落，隨機落在不同的獎勵槽中。每一次投幣都是運氣和技巧之間的微妙平衡，使普林科成為一次充滿機會與策略的迷人旅程。⚠️ 正在開發中。顯示的結果可能不正確。⚠️`,
+      description: `彈珠檯將投幣的動作轉化為藝術，每一個彈珠都充滿著期待與策略的融合。見證籌碼在釘板上滑落，隨機落在不同的獎勵槽中。每一次投幣都是運氣和技巧之間的微妙平衡，使普林科成為一次充滿機會與策略的迷人旅程。,
       volatility: 3,
     },
     app: dynamic(() => import("./Plinko")),
