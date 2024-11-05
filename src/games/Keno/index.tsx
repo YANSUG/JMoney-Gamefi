@@ -147,6 +147,24 @@ export default function Keno() {
     return betArray;
   };
 
+  // 計算賠率的函數
+  const calculatePayoutMultiplier = (selectionCount: number) => {
+    // 這裡是基於選擇數字的假設賠率，可以根據實際的遊戲規則調整
+    const payoutMultipliers = {
+      1: 3,
+      2: 6,
+      3: 10,
+      4: 15,
+      5: 20,
+      6: 30,
+      7: 40,
+      8: 50,
+      9: 75,
+      10: 100,
+    };
+    return payoutMultipliers[selectionCount] || 1;
+  };
+
   return (
     <>
       <GambaUi.Portal target="screen">
@@ -186,8 +204,11 @@ export default function Keno() {
             {gameWon === true
               ? "Clear the board to play again."
               : gameWon === false
-                ? "Clear the board to play again."
-                : null}
+              ? "Clear the board to play again."
+              : null}
+          </p>
+          <p style={{ textAlign: "center", marginTop: "20px" }}>
+            當前賠率: {calculatePayoutMultiplier(selectedNumbers.length)} 倍
           </p>
         </GambaUi.Responsive>
       </GambaUi.Portal>
