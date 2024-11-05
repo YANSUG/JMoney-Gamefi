@@ -56,16 +56,16 @@ export const FOOTER_TWITTER_LINK = {
  ******************************************/
 
 export const BASE_SEO_CONFIG = {
-  defaultTitle: "Gamba - NEXTjs Demo",
+  defaultTitle: "JMoney gamefi",
   description:
-    "The gambleFi protocol with end-to-end tools for on-chain degeneracy on Solana.",
+    "在 Solana 上提供端到端鏈上賭博工具的小遊戲協議",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://play-gamba.vercel.app/",
-    title: "Gamba - NEXTjs Demo",
+    title: "JMoney gamefi",
     description:
-      "The gambleFi protocol with end-to-end tools for on-chain degeneracy on Solana.",
+      "GambleFi 協議是在 Solana 區塊鏈上提供端到端工具，專為鏈上高風險遊戲而設計",
     images: [
       {
         url: "https://play-gamba.vercel.app/seo.png",
