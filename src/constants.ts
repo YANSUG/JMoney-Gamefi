@@ -8,7 +8,7 @@ import { PublicKey } from "@solana/web3.js";
  ******************************************/
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.01; // 5% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.05; // 5% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.01; // 0.1%
@@ -126,7 +126,7 @@ export const TOKENLIST = [
     image:
       "https://i.ibb.co/fvK8KVd/icon-512.png",
     decimals: 6,
-    baseWager: 1000e5,
+    baseWager: 1000e6,
   },
 
   // Add New Public pool
